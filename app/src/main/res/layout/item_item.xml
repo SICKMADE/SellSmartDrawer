@@ -1,0 +1,23 @@
+<com.google.android.material.card.MaterialCardView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent" android:layout_height="wrap_content"
+  android:layout_margin="8dp">
+  <LinearLayout android:orientation="horizontal" android:padding="12dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/ivThumb"
+      android:layout_width="72dp" android:layout_height="72dp"
+      android:scaleType="centerCrop"/>
+    <LinearLayout android:orientation="vertical"
+      android:layout_width="0dp" android:layout_height="wrap_content"
+      android:layout_weight="1" android:layout_marginStart="12dp">
+      <TextView android:id="@+id/tvTitle" android:text="Title" android:textStyle="bold"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+      <TextView android:id="@+id/tvCategory" android:text="Category"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+      <TextView android:id="@+id/tvPrice" android:text="$0.00"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button android:id="@+id/btnMarkSold" android:text="Mark Sold"
+      android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+  </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

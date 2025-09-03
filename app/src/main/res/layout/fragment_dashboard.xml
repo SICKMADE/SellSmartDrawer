@@ -1,0 +1,71 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent" android:layout_height="match_parent">
+  <LinearLayout android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <LinearLayout android:orientation="horizontal"
+      android:layout_width="match_parent" android:layout_height="wrap_content">
+      <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:layout_margin="8dp">
+        <LinearLayout android:orientation="vertical" android:padding="16dp"
+          android:layout_width="match_parent" android:layout_height="wrap_content">
+          <TextView android:id="@+id/tvTotalItems" android:text="0"
+            android:textStyle="bold" android:textSize="22sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+          <TextView android:text="Total Items"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+      </com.google.android.material.card.MaterialCardView>
+      <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:layout_margin="8dp">
+        <LinearLayout android:orientation="vertical" android:padding="16dp"
+          android:layout_width="match_parent" android:layout_height="wrap_content">
+          <TextView android:id="@+id/tvForSale" android:text="0"
+            android:textStyle="bold" android:textSize="22sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+          <TextView android:text="For Sale"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+      </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <LinearLayout android:orientation="horizontal"
+      android:layout_width="match_parent" android:layout_height="wrap_content">
+      <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:layout_margin="8dp">
+        <LinearLayout android:orientation="vertical" android:padding="16dp"
+          android:layout_width="match_parent" android:layout_height="wrap_content">
+          <TextView android:id="@+id/tvSold" android:text="0"
+            android:textStyle="bold" android:textSize="22sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+          <TextView android:text="Items Sold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+      </com.google.android.material.card.MaterialCardView>
+      <com.google.android.material.card.MaterialCardView
+        android:layout_width="0dp" android:layout_height="wrap_content"
+        android:layout_weight="1" android:layout_margin="8dp">
+        <LinearLayout android:orientation="vertical" android:padding="16dp"
+          android:layout_width="match_parent" android:layout_height="wrap_content">
+          <TextView android:id="@+id/tvRevenue" android:text="$0.00"
+            android:textStyle="bold" android:textSize="22sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+          <TextView android:text="Revenue"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+      </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <TextView android:text="Categories" android:textStyle="bold" android:textSize="18sp"
+      android:layout_width="wrap_content" android:layout_height="wrap_content"
+      android:layout_marginStart="8dp" android:layout_marginTop="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/rvCategories"
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:padding="4dp"/>
+  </LinearLayout>
+</ScrollView>

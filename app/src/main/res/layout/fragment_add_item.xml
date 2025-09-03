@@ -1,0 +1,49 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent" android:layout_height="match_parent">
+  <LinearLayout android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent" android:layout_height="wrap_content">
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etTitle" android:hint="Title"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:layout_marginTop="8dp">
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etDescription" android:hint="Description"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:layout_marginTop="8dp">
+      <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPrice" android:hint="Price"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+      android:id="@+id/spCategory"
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"/>
+
+    <ImageView
+      android:id="@+id/ivPicked"
+      android:layout_width="match_parent" android:layout_height="200dp"
+      android:scaleType="centerCrop" android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnPickImage" android:text="Pick Image"
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"/>
+
+    <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnSave" android:text="Save"
+      android:layout_width="match_parent" android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"/>
+  </LinearLayout>
+</ScrollView>
