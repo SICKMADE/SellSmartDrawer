@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/dashboardFragment" android:title="@string/nav_dashboard"/>
+  <item android:id="@+id/itemsFragment" android:title="@string/nav_items"/>
+  <item android:id="@+id/addItemFragment" android:title="@string/nav_add"/>
+  <item android:id="@+id/categoriesFragment" android:title="@string/nav_categories"/>
+  <item android:id="@+id/analyticsFragment" android:title="@string/nav_analytics"/>
+</menu>

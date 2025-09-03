@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">SellSmart</string>
+  <string name="menu_open">Open navigation drawer</string>
+  <string name="menu_close">Close navigation drawer</string>
+  <string name="nav_dashboard">Dashboard</string>
+  <string name="nav_items">Items</string>
+  <string name="nav_add">Add Item</string>
+  <string name="nav_categories">Categories</string>
+  <string name="nav_analytics">Analytics</string>
+</resources>
